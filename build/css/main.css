@@ -340,7 +340,7 @@ table {
   color: #29323c;
   font-family: "Open Sans - Extrabold", sans-serif;
   font-size: 26px;
-  font-weight: 400;
+  font-weight: bold;
   text-transform: uppercase; }
 
 .section-title-block__paragraph {
@@ -422,5 +422,83 @@ table {
 
 @media only screen and (min-width: 576px) {
   .service-item {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%; } }
+
+@media only screen and (min-width: 840px) {
+  .service-item {
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%; } }
+
+.works-images__wrapper {
+  margin: auto;
+  max-width: 2000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap; }
+
+.works-images__item {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .works-images__item img {
+    width: 100%;
+    height: 100%; }
+  .works-images__item:hover .works-images__item--hover {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+.works-images__item--hover {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7); }
+
+.works-images__item--hover__headline {
+  padding: 5px 0;
+  color: #f2f2f2;
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.works-images__item--hover__paragraph {
+  padding: 5px 0;
+  color: #f2f2f2;
+  font-family: Montserrat, sans-serif;
+  font-size: 13px; }
+
+@media only screen and (min-width: 576px) {
+  .works-images__item {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%; } }
+
+@media only screen and (min-width: 768px) {
+  .works-images__item {
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%; } }
+
+@media only screen and (min-width: 1200px) {
+  .works-images__item {
+    -ms-flex-preferred-size: 20%;
+    flex-basis: 20%; } }

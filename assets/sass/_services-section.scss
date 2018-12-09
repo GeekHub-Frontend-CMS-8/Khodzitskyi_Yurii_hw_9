@@ -9,7 +9,7 @@
   color: #29323c;
   font-family: "Open Sans - Extrabold", sans-serif;
   font-size: 26px;
-  font-weight: 400;
+  font-weight: bold;
   text-transform: uppercase;
 }
 .section-title-block__paragraph {
@@ -69,6 +69,11 @@
   transform: rotate(90deg);
 }
 @media only screen and (min-width: 576px) {
+  .service-item {
+    flex-basis: 50%;
+  }
+}
+@media only screen and (min-width: 840px) {
   .service-item {
     flex-basis: 25%;
   }
