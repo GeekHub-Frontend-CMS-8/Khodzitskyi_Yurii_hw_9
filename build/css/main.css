@@ -495,6 +495,11 @@ table {
 
 @media only screen and (min-width: 768px) {
   .works-images__item {
+    -ms-flex-preferred-size: 33.3%;
+    flex-basis: 33.3%; } }
+
+@media only screen and (min-width: 992px) {
+  .works-images__item {
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%; } }
 
@@ -502,3 +507,82 @@ table {
   .works-images__item {
     -ms-flex-preferred-size: 20%;
     flex-basis: 20%; } }
+
+.testimonials {
+  padding-bottom: 30px; }
+
+.testimonials-slider {
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 10px;
+  text-align: center; }
+
+.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  list-style: none; }
+  .slick-dots button {
+    margin: 10px;
+    border-radius: 20px;
+    width: 15px;
+    height: 15px;
+    outline: none;
+    border: 1px solid #000; }
+
+.slick-active button {
+  background-color: #000; }
+
+.testimonials__cite-paragraph {
+  color: #2b3746;
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px; }
+
+.testimonials__cite-end {
+  color: rgba(43, 55, 70, 0.66);
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic; }
+
+.testimonials__photo {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  border-radius: 100px;
+  overflow: hidden; }
+  .testimonials__photo img {
+    height: 100%; }
+
+.testimonials__name {
+  padding: 5px 0;
+  color: #29323c;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px; }
+
+.testimonials__position {
+  padding-bottom: 30px;
+  color: rgba(41, 50, 60, 0.8);
+  font-family: 'Montserrat',sans-serif;
+  font-size: 13px;
+  font-weight: 400; }
+
+@media only screen and (min-width: 576px) {
+  .testimonials {
+    padding-bottom: 100px; } }

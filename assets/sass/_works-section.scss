@@ -51,11 +51,13 @@
 }
 @media only screen and (min-width: 768px) {
   .works-images__item {
-    flex-basis: 25%;
+    flex-basis: 33.3%;
   }
 }
 @media only screen and (min-width: 992px) {
-
+  .works-images__item {
+    flex-basis: 25%;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .works-images__item {
