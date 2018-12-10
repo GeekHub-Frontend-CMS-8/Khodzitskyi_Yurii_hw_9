@@ -14,16 +14,19 @@
   }
   &:hover {
     .works-images__item--hover {
-      display: flex;
+      opacity: 1;
+      transition: 0.3s;
     }
   }
 }
 .works-images__item--hover {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
+  opacity: 0;
+  transition: 0.3s;
   left: 0;
   top: 0;
   right: 0;

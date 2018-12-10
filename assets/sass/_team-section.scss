@@ -12,10 +12,10 @@
   padding: 0 10px;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .team-section-teammates-item {
-  margin:0 auto 20px;
+  margin:0 0 20px;
   width: 100%;
   background-color: rgba(242, 242, 242, 0.75);
 }
@@ -108,5 +108,10 @@
   .team-section-teammates-item {
     max-width: 270px;
     background-color: rgba(242, 242, 242, 0.75);
+  }
+}
+@media only screen and (min-width: 900px) {
+  .team-section-teammates-wrapper {
+    justify-content: space-between;
   }
 }
