@@ -35,7 +35,7 @@ gulp.task('fonts', function () {
 });
 
 gulp.task('js', function () {
-    return gulp.src('assets/js/**/*')
+    return gulp.src('assets/js/**/*.js')
         .pipe(gulp.dest('build/js'))
         .pipe(browserSync.reload({stream: true}))
 
@@ -53,5 +53,5 @@ gulp.task("watch", [ 'sass', "html", 'img', 'fonts', 'js'], function () {
     gulp.watch('assets/**/*.html' , ['html']);
 	gulp.watch('assets/img/**/*', ["img"]);
     gulp.watch('assets/fonts/**/*', ["fonts"]);
-    gulp.watch('assets/js/**/*', ["js"]);
+    gulp.watch('assets/js/**/*.js', ["js"]);
 });
