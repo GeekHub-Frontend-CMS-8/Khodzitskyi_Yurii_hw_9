@@ -672,3 +672,148 @@ table {
 @media only screen and (min-width: 576px) {
   .testimonials {
     padding-bottom: 100px; } }
+
+.team-section {
+  background: url("../img/team-section-background.png") center no-repeat;
+  background-size: cover; }
+
+.team__section-title-font {
+  color: #f2f2f2; }
+
+.team__section-title-underline {
+  border: 1px solid #f2f2f2; }
+
+.team-section-teammates-wrapper {
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.team-section-teammates-item {
+  margin: 0 auto 20px;
+  width: 100%;
+  background-color: rgba(242, 242, 242, 0.75); }
+
+.team-section-teammates-item__image--wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden; }
+  .team-section-teammates-item__image--wrapper img {
+    max-height: 270px; }
+  .team-section-teammates-item__image--wrapper:hover .team-image-hover {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+.team-section-teammates-item__info--wrapper {
+  padding: 30px 0; }
+
+.team-section-teammates-item__info__name {
+  color: #29323c;
+  text-align: center; }
+
+.team-section-teammates-item__info__position {
+  padding: 7px 0 20px;
+  color: rgba(41, 50, 60, 0.74);
+  text-align: center; }
+
+.team-section-teammates-item__info__social-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #29323c; }
+
+.team-section-teammates-item__info__social--item {
+  margin: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 25px;
+  height: 25px; }
+  .team-section-teammates-item__info__social--item a {
+    text-decoration: none;
+    color: rgba(41, 50, 60, 0.74);
+    font-size: 25px; }
+
+.team-section-teammates-item__info__social--item-circle {
+  background-color: rgba(41, 50, 60, 0.74);
+  border-radius: 40px;
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .team-section-teammates-item__info__social--item-circle a {
+    text-decoration: none;
+    color: rgba(242, 242, 242, 0.71);
+    font-size: 16px; }
+  .team-section-teammates-item__info__social--item-circle:hover {
+    background-color: #29323c;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+
+.team-image-hover {
+  display: none;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(72, 85, 99, 0.71)), to(rgba(41, 50, 60, 0.71)));
+  background-image: linear-gradient(to right, rgba(72, 85, 99, 0.71) 0%, rgba(41, 50, 60, 0.71) 100%); }
+
+.team-image-hover__link {
+  width: 100%;
+  text-decoration: none;
+  color: #e8e8e8;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.team-section-button__wrapper {
+  padding-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+@media only screen and (min-width: 450px) {
+  .team-section-teammates-item {
+    max-width: 270px;
+    background-color: rgba(242, 242, 242, 0.75); } }

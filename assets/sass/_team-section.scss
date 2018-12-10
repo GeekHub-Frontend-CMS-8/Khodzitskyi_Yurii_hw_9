@@ -1,0 +1,112 @@
+.team-section {
+  background: url("../img/team-section-background.png") center no-repeat;
+  background-size: cover;
+}
+.team__section-title-font {
+  color: #f2f2f2;
+}
+.team__section-title-underline {
+  border: 1px solid #f2f2f2;
+}
+.team-section-teammates-wrapper {
+  padding: 0 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.team-section-teammates-item {
+  margin:0 auto 20px;
+  width: 100%;
+  background-color: rgba(242, 242, 242, 0.75);
+}
+.team-section-teammates-item__image--wrapper {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  img {
+    max-height: 270px;
+  }
+  &:hover .team-image-hover{
+    display: flex;
+  }
+}
+.team-section-teammates-item__info--wrapper {
+  padding: 30px 0;
+}
+.team-section-teammates-item__info__name {
+  color: rgba(41, 50, 60, 1);
+  text-align: center;
+}
+.team-section-teammates-item__info__position {
+  padding: 7px 0 20px;
+  color: rgba(41, 50, 60, 0.74);
+  text-align: center;
+}
+.team-section-teammates-item__info__social-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  color: rgba(41, 50, 60, 1);
+}
+.team-section-teammates-item__info__social--item {
+  margin: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  a {
+    text-decoration: none;
+    color: rgba(41, 50, 60, 0.74);
+    font-size: 25px;
+  }
+}
+.team-section-teammates-item__info__social--item-circle {
+  background-color: rgba(41, 50, 60, 0.74);
+  border-radius: 40px;
+  overflow: hidden;
+  transition: 0.3s;
+  a {
+    text-decoration: none;
+    color: rgba(242, 242, 242, 0.71);
+    font-size: 16px;
+  }
+  &:hover {
+    background-color: rgba(41, 50, 60, 1);
+    transition: 0.3s;
+  }
+}
+.team-image-hover {
+  display: none;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to right, rgba(72, 85, 99, 0.71) 0%, rgba(41, 50, 60, 0.71) 100%);
+}
+.team-image-hover__link {
+  width: 100%;
+  text-decoration: none;
+  color: #e8e8e8;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.team-section-button__wrapper {
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (min-width: 450px) {
+  .team-section-teammates-item {
+    max-width: 270px;
+    background-color: rgba(242, 242, 242, 0.75);
+  }
+}
