@@ -255,6 +255,7 @@ table {
 .slicknav_menu {
   display: block;
   position: fixed;
+  z-index: 1000;
   left: 0;
   max-width: 1170px;
   margin: auto;
@@ -265,6 +266,12 @@ table {
 
 .slicknav_btn {
   background-color: transparent; }
+
+.slicknav_nav {
+  background-color: rgba(11, 11, 11, 0.8);
+  float: right;
+  width: 100%;
+  max-width: 350px; }
 
 .hero {
   display: -webkit-box;
@@ -959,3 +966,161 @@ table {
   text-transform: uppercase;
   background-color: #485563;
   color: #f2f2f2; }
+
+.contact-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  max-width: 2000px; }
+
+.contact-section-map__wrapper {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  min-height: 650px; }
+
+.contact-section-contacts__wrapper {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  background: url("../img/contact-background.png") center no-repeat;
+  background-size: cover;
+  padding: 30px 0; }
+
+.contact-section-contacts__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.contact-section-contacts__form__ul {
+  width: 100%;
+  list-style: none;
+  padding: 0; }
+
+.contact-section-contacts__form__ul__item {
+  margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.contact-input {
+  min-width: 90%;
+  border: 1px solid rgba(242, 242, 242, 0.71);
+  border-radius: 2px;
+  background-color: transparent;
+  outline: none;
+  min-height: 45px;
+  color: #f2f2f2; }
+
+.contact-input__textarea {
+  min-height: 150px;
+  resize: none; }
+
+.contact-input__label {
+  color: #f6f6f6;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 14px;
+  font-weight: bold; }
+
+@media only screen and (min-width: 400px) {
+  .contact-section-contacts__form__ul__item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  .contact-section-contacts__wrapper {
+    padding: 30px 5%; }
+  .contact-input {
+    min-width: 70%; } }
+
+@media only screen and (min-width: 850px) {
+  .contact-section-map__wrapper {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%; }
+  .contact-section-contacts__wrapper {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%; } }
+
+@media only screen and (min-width: 1000px) {
+  .contact-section-contacts__wrapper {
+    padding: 30px 10%; } }
+
+.footer-container {
+  padding: 50px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.footer__secondary-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.footer__secondary__paragraph {
+  padding: 0 25px;
+  color: #29323c;
+  font-family: "Open Sans",sans-serif;
+  font-size: 14px;
+  font-weight: bold; }
+
+.footer-social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  list-style: none; }
+
+.footer-social__item {
+  margin: 0 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background-color: #525961;
+  text-decoration: none;
+  color: #f2f2f2;
+  font-size: 1.4em; }
+  .footer-social__item:hover {
+    background-color: #3e454d; }

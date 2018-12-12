@@ -658,9 +658,64 @@
             </div>
         </div>
     </section>
+    <section class="contact-section">
+        <div class="contact-section-map__wrapper" id="googleMap"></div>
+        <div class="contact-section-contacts__wrapper">
+            <form class="contact-section-contacts__form">
+                <ul class="contact-section-contacts__form__ul">
+                    <li class="contact-section-contacts__form__ul__item">
+                        <label for="name" class="contact-input__label">Name</label>
+                        <input type="text" name="name" class="contact-input" id="name">
+                    </li>
+                    <li class="contact-section-contacts__form__ul__item">
+                        <label for="email" class="contact-input__label">Email</label>
+                        <input type="text" name="email" class="contact-input" id="email">
+                    </li>
+                    <li class="contact-section-contacts__form__ul__item">
+                        <label for="phone" class="contact-input__label">Phone</label>
+                        <input type="text" name="phone" class="contact-input" id="phone">
+                    </li>
+                    <li class="contact-section-contacts__form__ul__item">
+                        <label for="message" class="contact-input__label">Message</label>
+                        <textarea name="message" id="message" class="contact-input contact-input__textarea"></textarea>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </section>
+    <footer class="footer-section">
+        <div class="container footer-container">
+            <div class="footer__secondary-wrapper">
+                <img src="img/footer-logo.png" alt="logo">
+                <p class="footer__secondary__paragraph">
+                    © Copyright 2015. Allright Reserved
+                </p>
+            </div>
+            <div class="footer__secondary-wrapper">
+                <p class="footer__secondary__paragraph">
+                    Stay In Touch
+                </p>
+                <ul class="footer-social__list">
+                    <li>
+                        <a href="#" class="footer-social__item fa fa-facebook"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-social__item fa fa-twitter"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-social__item fa fa-google-plus"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-social__item fa fa-dribbble"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/jquery.slicknav.js"></script>
     <script type="text/javascript" src="js/slick.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
